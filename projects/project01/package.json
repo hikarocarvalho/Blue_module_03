@@ -1,0 +1,19 @@
+{
+  "name": "project-01",
+  "version": "1.0.0",
+  "description": "first project from node module blue",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node",
+    "first",
+    "project"
+  ],
+  "author": "hikaro carvalho",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

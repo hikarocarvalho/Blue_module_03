@@ -1,0 +1,18 @@
+{
+  "name": "projetorevisao",
+  "version": "1.0.0",
+  "description": "rever conceitos",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "projeto",
+    "revisao"
+  ],
+  "author": "hikaro carvalho",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
