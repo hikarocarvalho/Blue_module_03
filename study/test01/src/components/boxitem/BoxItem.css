@@ -1,0 +1,34 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: auto;
+    background-color: #635339;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    border-radius: 20px;
+    color:#ff8041;
+    padding: 20px;
+}
+@media only screen and (min-width: 1025px) {
+.card{
+    width: 26%;
+    
+}
+}
+@media only screen and (max-width: 1024px) {
+    .card{
+        
+        width: 40%;
+        
+    }
+}
+@media only screen and (max-width: 600px) {
+    .card{
+        
+        width: 80%;
+        
+    }
+}

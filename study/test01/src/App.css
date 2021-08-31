@@ -1,0 +1,49 @@
+.body{
+  margin: 0;
+  padding:0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+.title{
+  text-align: center;
+  background-color: #37342d;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  
+  align-items: center;
+  justify-content: center;
+  color: #ff5300;
+}
+.title .logo{
+  width: 40%;
+}
+.items{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  
+}
+@media only screen and (max-width: 1024px) {
+  .title{
+    flex-direction: row;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .title{
+    flex-direction: column;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  .title{
+    flex-direction: row;
+  }
+}

@@ -1,12 +1,11 @@
 // importação da biblioteca express
-const { json } = require('express');
 const express = require('express');
 // criação de objeto sob a biblioteca express
 const app = express();
 
 app.use(express.json());
 // porta para ser utilizada
-const port = 3000;
+const port = 3001;
 // lista de filmes
 const filmes = [
     'Cara cadê meu carro',
