@@ -1,13 +1,16 @@
 import React from 'react';
-import Title from '../title/Title';
 import SubTitle from '../subtitle/Subtitle';
 import Image from '../image/Image';
 import Description from '../description/Description';
 import Button from '../button/Button';
 import './../button/Button.css';
-import Video from '../video/Video';
-import {Card} from 'react-bootstrap';
 import './BoxItem.css'
+import Video from '../video/Video';
+import {Card ,CardText, CardBody,
+    CardTitle, CardSubtitle} from 'reactstrap';
+import {Container, Row,Col} from 'reactstrap';
+
+
 class BoxItem extends React.Component{
     constructor(props){
         super(props);
@@ -28,8 +31,8 @@ class BoxItem extends React.Component{
         
     }
     showVideo(){
-       this.setState({ videoview: "flex" });
-       this.setState({ buttonview: "block" });
+        this.setState({ videoview: "flex" });
+        this.setState({ buttonview: "block" });
         this.setState({ videoembed: this.state.embed });
     }
     closeVideo(){
@@ -40,20 +43,27 @@ class BoxItem extends React.Component{
     render(){
         
         return (
-            
-            <Card className="card">
-              
-                <Image image = {this.state.image}/>
-                <Card.Body>
-                    <Card.Title><Title title = {this.state.title}/></Card.Title>
-                    <Card.Title><SubTitle subtitle = {this.state.subtitle}/></Card.Title>
-                    <Description description = {this.state.description}/>
+            <Container className="count-einer">
+            <Row >
+                <Col md="12" lg="12" >
+                
+                <Card className="carditem" id="card">
+                    <Image image = {this.state.image}/>
+                    <CardBody className="bodyitem">
+                        <CardTitle><SubTitle subtitle = {this.state.title}/></CardTitle>
+                        <CardSubtitle tag="h6" className="description"><SubTitle subtitle = {this.state.subtitle}/></CardSubtitle>
+                        <CardText ><Description description = {this.state.description}/></CardText>
+                        
+                    </CardBody>
                     <Button name="button" onClick={this.showVideo} button={this.state.button}/>
-                </Card.Body>
-                <Button name="close" onClick={this.closeVideo} style={{display : this.state.buttonview}} button="X"/>
-                <Video view = {this.state.videoview} embed = {this.state.videoembed} id={this.state.id} ></Video>
-            </Card>
-         
+                        <Button name="close" onClick={this.closeVideo} style={{display : this.state.buttonview}} button="X"/>
+                        <Video view = {this.state.videoview} embed = {this.state.videoembed} id={this.state.id} ></Video>
+                    
+                </Card>
+                
+                </Col>
+            </Row>
+         </Container>
         );
     }
 }

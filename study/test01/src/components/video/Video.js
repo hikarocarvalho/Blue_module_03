@@ -13,7 +13,7 @@ class Video extends React.Component{
     
     render(){
         return (
-            <div className="modalvideo" style={{display : this.props.view}}>
+            <div id="modalvideo" style={{display : this.props.view}}>
                 <iframe src={this.props.embed} title={this.state.title} allow={this.state.allow} allowFullScreen={this.state.fullscreen} className="video"></iframe>
             </div>
         );

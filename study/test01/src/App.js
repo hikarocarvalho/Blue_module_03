@@ -7,7 +7,7 @@ import React from 'react';
 import BoxItem from './components/boxitem/BoxItem';
 import 'react-bootstrap';
 import Title from './components/title/Title';
-
+import {Col} from 'reactstrap';
 class App extends React.Component{
   constructor(props){
     super(props);
@@ -79,7 +79,11 @@ class App extends React.Component{
         </header>
         <section className="items">
           {documentarys.map((docs) => (
-            <BoxItem className='item' title = {docs.title} subtitle = {docs.subtitle} image = {docs.image} description = {docs.description} button={docs.button} key = {docs.id} embed = {docs.embed}></BoxItem>
+            
+              <Col md="4" lg="4" height="90%" className="justify-content-md-center">
+                <BoxItem className='item' title = {docs.title} subtitle = {docs.subtitle} image = {docs.image} description = {docs.description} button={docs.button} key = {docs.id} embed = {docs.embed}></BoxItem>
+              </Col>
+            
           ))}
         </section>
       </div>

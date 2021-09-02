@@ -11,10 +11,11 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-
+    
     
 }
 .close{
+    
     display: none;
     position: fixed;
     z-index: 10;

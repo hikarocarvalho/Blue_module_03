@@ -40,9 +40,8 @@ class BoxItem extends React.Component{
         
         return (
             
-            
             <section className="card">
-              
+             
                 <Image image = {this.state.image}/>
                 <div>
                     <article><Title title = {this.state.title}/></article>

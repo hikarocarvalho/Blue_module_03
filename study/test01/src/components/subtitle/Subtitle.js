@@ -3,7 +3,7 @@ import React from 'react';
 class SubTitle extends React.Component{
     render(){
         return (
-            <h4>{this.props.subtitle}</h4>
+            <h3>{this.props.subtitle}</h3>
         );
     }
 }
