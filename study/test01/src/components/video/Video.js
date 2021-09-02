@@ -4,17 +4,17 @@ class Video extends React.Component{
     constructor(props){
         super(props);
         this.state = {
-            link : this.props.link,
-            id : this.props.id,
+            link : this.props.embed,
             title : "",
             allow : "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture",
-            fullscreen : true
+            fullscreen : true,
         }
-        
+      
     }
+    
     render(){
         return (
-            <div className="modalvideo" id={this.state.id}>
+            <div className="modalvideo" style={{display : this.props.view}}>
                 <iframe src={this.state.link} title={this.state.title} allow={this.state.allow} allowFullScreen={this.state.fullscreen}></iframe>
             </div>
         );
