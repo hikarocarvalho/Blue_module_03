@@ -14,51 +14,51 @@ class App extends React.Component{
     this.state ={
       documentarys :[
       {
-        id : 0,
+        id : 1,
         title : "Giza, A Cidade Perdida das Grandes Pirâmides do Egito",
         subtitle : "(Egiptologia com Zahi Hawass Episódio 01)",
         image : image,
-        embed : "https://www.youtube.com/embed/micW2VAS2DY",
+        embed : "https://www.youtube.com/embed/micW2VAS2DY?version=3&enablejsapi=1",
         description : "Caminhe pelas ruas das cidades do antigo egito",
         button: "Veja o video!"
       },{
-        id : 1,
+        id : 2,
         title : "As Tumbas Perdidas de Tebas",
         subtitle : "(Egiptologia com Zahi Hawass Episódio 02)",
         image : image,
-        embed : "https://www.youtube.com/embed/lCPFZ6WzFJE",
+        embed : "https://www.youtube.com/embed/lCPFZ6WzFJE?version=3&enablejsapi=1",
         description : "Vizualize os problemas que causaram o desaparecimento de várias tumbas!",
         button: "Veja o video!"
       },{
-        id : 2,
+        id : 3,
         title : "Segredos no Vale dos Reis",
         subtitle : "(Egiptologia com Zahi Hawass Episódio 03)",
         image : image,
-        embed : "https://www.youtube.com/embed/VQm1cwEABuE",
+        embed : "https://www.youtube.com/embed/VQm1cwEABuE?version=3&enablejsapi=1",
         description : "Conheça agora o segredo contido no vale dos reis!",
         button: "Veja o video!"
       },{
-        id : 3,
+        id : 4,
         title : "Os Tesouros Perdidos do Museu do Cairo",
         subtitle : "(Egiptologia com Zahi Hawass Episódio 04)",
         image : image,
-        embed : "https://www.youtube.com/embed/RsFCzP-96Qw",
+        embed : "https://www.youtube.com/embed/RsFCzP-96Qw?version=3&enablejsapi=1",
         description : "Veja as Maravilias históricas que foram perdidas!",
         button: "Veja o video!"
       },{
-        id : 4,
+        id : 5,
         title : "Saqqara: O Culto da Morte",
         subtitle : "(Egiptologia com Zahi Hawass Episódio 05)",
         image : image,
-        embed : "https://www.youtube.com/embed/r_KpYgsUpK4",
+        embed : "https://www.youtube.com/embed/r_KpYgsUpK4?version=3&enablejsapi=1",
         description : "Conheça mais sobre as praticas funebres do antigo Egito!",
         button: "Veja o video!"
       },{
-        id : 5,
+        id : 6,
         title : "O Garoto Rei Tutancâmon",
         subtitle : "(Egiptologia com Zahi Hawass Episódio 10)",
         image : image,
-        embed : "https://www.youtube.com/embed/AZZwGX-EBE4",
+        embed : "https://www.youtube.com/embed/AZZwGX-EBE4?version=3&enablejsapi=1",
         description : "Navegue pelos segredos contidos na tumba do Faraó mais jovem que existiu!",
         button: "Veja o video!"
       }
