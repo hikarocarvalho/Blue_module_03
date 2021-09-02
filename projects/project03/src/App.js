@@ -75,7 +75,7 @@ class App extends React.Component{
             <div className="logo">
               <Image image={logo}/>
             </div>
-            <Title title="Documentarios Da História do Egito!"/>
+            <Title title="Documentários Da História do Egito!"/>
         </header>
         <section className="items">
           {documentarys.map((docs) => (
