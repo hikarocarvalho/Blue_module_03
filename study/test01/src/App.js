@@ -80,7 +80,7 @@ class App extends React.Component{
         <section className="items">
           {documentarys.map((docs) => (
             
-              <Col md="4" lg="4" height="90%" className="justify-content-md-center">
+              <Col sm="12" md="6" lg="4" height="90%" className="justify-content-md-center">
                 <BoxItem className='item' title = {docs.title} subtitle = {docs.subtitle} image = {docs.image} description = {docs.description} button={docs.button} key = {docs.id} embed = {docs.embed}></BoxItem>
               </Col>
             
