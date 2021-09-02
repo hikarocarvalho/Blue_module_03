@@ -1,0 +1,17 @@
+.modalvideo{
+    position: fixed;
+    background-color:rgba(0, 0, 0, 0.5);
+    left: 0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.modalvideo iframe{
+    width: 80%;
+    height: 100%;
+    border: none;
+}
